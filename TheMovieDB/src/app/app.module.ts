@@ -9,13 +9,15 @@ import { LoginComponent } from './components/login/login.component';
 import { AuthComponent } from './components/auth/auth.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { MaterialsImportModule } from './materials-import/materials-import.module';
+import { ActorInfoComponent } from './components/actor-info/actor-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ActorListComponent,
     LoginComponent,
-    AuthComponent
+    AuthComponent,
+    ActorInfoComponent
   ],
   imports: [
     BrowserModule,

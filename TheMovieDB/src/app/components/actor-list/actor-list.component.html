@@ -1,7 +1,14 @@
+<div>
+  <button (click)="backPage()"><mat-icon>arrow_back</mat-icon></button>
+  {{pageActual}} | {{numPagesTotal}}
+  <button (click)="nextPage()"><mat-icon>arrow_forward</mat-icon></button>
+</div>
+<div class="cont">
 <mat-card class="example-card" *ngFor="let actor of actorList">
   <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>{{actor.name}}</mat-card-title>
   </mat-card-header>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <img mat-card-image [src]="showImg(actor)" >
+  <button mat-raised-button aria-label class="add" (click)="getInfo(actor)" ><mat-icon fontIcon="info" ></mat-icon> Info</button>
 </mat-card>
+</div>

@@ -1,0 +1,17 @@
+.mat-dialog-content{
+    width: 200px;
+    height: 200px;
+
+}
+*{
+    overflow: hidden; 
+}
+
+img{
+    width: 10%;
+    margin: 1%;
+}
+
+.movies{
+    display: inline;
+}
